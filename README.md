@@ -38,6 +38,16 @@
   - [`chalk`](https://www.npmjs.com/package/chalk)
     - Add colors to your console output
     - **NOTE:** Must `npm install chalk@4` to use with CommonJS
+  - [`figlet`](https://www.npmjs.com/package/figlet)
+    - Turn text into ASCII art
+  - [`cli-welcome`](https://www.npmjs.com/package/cli-welcome)
+    - Add a welcome message to your CLI
+  - [`log-symbols`](https://www.npmjs.com/package/log-symbols)
+    - Includes fallbacks for all Operating Sytems
+      - ℹ️ Info icon
+      - ✔️ Success icon
+      - ⚠️ Warning icon
+      - ❌ Error Icon
 </details>
 
 # Creating a module
