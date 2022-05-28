@@ -12,13 +12,10 @@
   - `.gitignore`: Avoid committing `node_modules`, etc
   - `.gitattributes`: Set options such as `eol`
   - `.editorconfig`: Optional -- contains things like charset, tabs vs spaces, etc
+  ## Creating a Code of Conduct
+  - Run `npx conduct` to create a code of conduct markdown file in your project
+  ## Creating a License
+  - Can `npm install licensed`
+  - Then, run `licensed` and fill out the prompts
 
-## Creating a Code of Conduct
-
-- Run `npx conduct` to create a code of conduct markdown file in your project
-
-## Creating a License
-
-- Can `npm install licensed`
-- Then, run `licensed` and fill out the prompts
 </details>
