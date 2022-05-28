@@ -35,10 +35,12 @@
 <details>
   <summary>Click to expand</summary>
   
-  - `chalk` 
+  - [`chalk`](https://www.npmjs.com/package/chalk)
+    - Add colors to your console output
+    - **NOTE:** Must `npm install chalk@4` to use with CommonJS
 </details>
 
-# Creating an npm package (module)
+# Creating a module
 
 <details>
   <summary>Click to expand</summary>
