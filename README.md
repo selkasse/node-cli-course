@@ -22,6 +22,8 @@
   ## Use `npm link` for local development
   - Creates a symlink from the project directory to the glboal installation
   - Makes it so that you can work on your CLI without always having to rebuild
+  ## Use `npm unlink -g` to make sure you're using the **published** version
+    - Can always run `npm link` again to switch back to development
   ## Use `npm version patch | minor | major` to increment CLI version
   
   ## Use `npm publish` after versioning
