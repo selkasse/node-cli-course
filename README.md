@@ -5,7 +5,7 @@
 <details>
   <summary>Click to expand</summary>
   
-  ## To make the file executable
+  ## Make the file executable
   - Use `chmod +x index.js` to alter permissions
   - Add a shebang (`#!/usr/bin/env node`) to the top of the file
     - This tells the terminal to use node instead of bash
@@ -19,7 +19,23 @@
     }
   }
   ```
+  ## Use `npm link` for local development
+  - Creates a symlink from the project directory to the glboal installation
+  - Makes it so that you can work on your CLI without always having to rebuild
+  ## Use `npm version patch | minor | major` to increment CLI version
+  
+  ## Use `npm publish` after versioning
+  
+  ## Use `npx <your CLI name>` to run the published version
 
+</details>
+
+# Useful Packages
+
+<details>
+  <summary>Click to expand</summary>
+  
+  - `chalk` 
 </details>
 
 # Creating an npm package (module)
