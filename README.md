@@ -61,6 +61,27 @@
   
   ## It's a good idea to have the following files in your project
   - `package.json`: Make sure to install things like prettier as dev dependencies (`npm install prettier -D`)
+    - `name`: should always be `lower-kebab-case`
+    - `version`: should use [Semantic Versioning](https://semver.org/)
+    - `repository`: keep it simple -- `selkasse/my-cool-cli`
+    - `author`: example:
+       ```json
+      {
+        "author": "Sharif Elkassed",
+        "email": "selkasse@gmu.edu",
+        "url": "https://saleshorse.org"
+      }
+        ```
+    - `main`: entry point of the package (usually `index.js`)
+    - `files`: an array of file names that specifies which files are used in the node module 
+       - Note that if you include a folder, all files in the folder will be included
+       ```js
+       "files": ["index.js"]
+       ```
+    - `keywords`: indicate what users should search in the npm registry to find your package
+    - `devDependencies`: packages like `prettier` that are only used in development
+      - no need to manually add to this key
+        - `devDependencies` will be automatically updated when you `npm install <package> -D`
   - `test.js`: Mock the execution of your program
     - ```js
       // require the local file instead of the actual npm package
