@@ -9,6 +9,16 @@
   - Use `chmod +x index.js` to alter permissions
   - Add a shebang (`#!/usr/bin/env node`) to the top of the file
     - This tells the terminal to use node instead of bash
+  ## Configure your `package.json` file
+  ```js
+  {
+    "name": "sharif",      //* the name of the package on the npm registry
+    "version": "1.0.0",
+    "bin": {
+      "sharif": "index.js" //* the name of the command to run
+    }
+  }
+  ```
 
 </details>
 
