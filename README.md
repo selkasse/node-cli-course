@@ -1,5 +1,17 @@
 # NodeCLI Course Notes
 
+# Creating a CLI
+
+<details>
+  <summary>Click to expand</summary>
+  
+  ## To make the file executable
+  - Use `chmod +x index.js` to alter permissions
+  - Add a shebang (`#!/usr/bin/env node`) to the top of the file
+    - This tells the terminal to use node instead of bash
+
+</details>
+
 # Creating an npm package (module)
 
 <details>
