@@ -54,6 +54,25 @@
       - ✔️ Success icon
       - ⚠️ Warning icon
       - ❌ Error Icon
+  - [`commander`](https://www.npmjs.com/package/commander)
+    - API for creating options, flags, etc
+  - [`oclif`](https://www.npmjs.com/package/oclif)
+    - Framework for creating CLIs
+  - [`sade`](https://www.npmjs.com/package/sade)
+    - Similar to `commander`
+  - [`gluegun`](https://www.npmjs.com/package/gluegun)
+  - [`ink](https://www.npmjs.com/package/ink)
+    - Use React to build your CLI
+  - [`yargs`](https://www.npmjs.com/package/yargs)
+    - Node CLI arguments helper
+  - [`arg`](https://www.npmjs.com/package/arg)
+    - Created by Vecel
+  - [`cac`](https://www.npmjs.com/package/cac)
+    - Stands for 'Command and Conquer'
+    - Written in Typescript
+  - [`meow`](https://www.npmjs.com/package/meow)
+    - Lightweight
+    - Simple library, as opposed to an entire framework
 </details>
 
 # Creating a module
