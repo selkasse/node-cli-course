@@ -1,5 +1,11 @@
 # NodeCLI Course Notes
 
+## If `npx` is not executing the latest version of your package
+
+```bash
+rm -rf ~/.npm/_npx
+```
+
 # Creating a CLI
 
 <details>
