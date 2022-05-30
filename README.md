@@ -87,6 +87,8 @@ rm -rf ~/.npm/_npx
     - Strip HTML
   - [`enquirer`](https://www.npmjs.com/package/enquirer)
     - Build styled CLI prompts for taking user input
+  - [`prompts`](https://www.npmjs.com/package/prompts)
+    - Similar to `enquirer`
 </details>
 
 # Creating a module
