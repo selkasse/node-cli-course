@@ -67,7 +67,7 @@ rm -rf ~/.npm/_npx
   - [`sade`](https://www.npmjs.com/package/sade)
     - Similar to `commander`
   - [`gluegun`](https://www.npmjs.com/package/gluegun)
-  - [`ink](https://www.npmjs.com/package/ink)
+  - [`ink`](https://www.npmjs.com/package/ink)
     - Use React to build your CLI
   - [`yargs`](https://www.npmjs.com/package/yargs)
     - Node CLI arguments helper
@@ -79,6 +79,10 @@ rm -rf ~/.npm/_npx
   - [`meow`](https://www.npmjs.com/package/meow)
     - Lightweight
     - Simple library, as opposed to an entire framework
+  - [`ora`](https://www.npmjs.com/package/ora)
+    - Add loading spinners to your CLI
+  - [`boxen`](https://www.npmjs.com/package/boxen)
+    - Add styled text boxes to your CLI
 </details>
 
 # Creating a module
