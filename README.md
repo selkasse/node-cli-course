@@ -85,6 +85,8 @@ rm -rf ~/.npm/_npx
     - Add styled text boxes to your CLI
   - [`cli-striphtml`](https://www.npmjs.com/package/cli-strip-html)
     - Strip HTML
+  - [`enquirer`](https://www.npmjs.com/package/enquirer)
+    - Build styled CLI prompts for taking user input
 </details>
 
 # Creating a module
