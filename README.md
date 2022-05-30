@@ -83,6 +83,8 @@ rm -rf ~/.npm/_npx
     - Add loading spinners to your CLI
   - [`boxen`](https://www.npmjs.com/package/boxen)
     - Add styled text boxes to your CLI
+  - [`cli-striphtml`](https://www.npmjs.com/package/cli-strip-html)
+    - Strip HTML
 </details>
 
 # Creating a module
