@@ -1,5 +1,5 @@
 {
-  "name": "hello",
+  "name": "@selkasse/hello",
   "version": "0.0.1",
   "bin": {
     "hello": "index.js"

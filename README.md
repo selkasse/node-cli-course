@@ -31,7 +31,6 @@ rm -rf ~/.npm/_npx
   ## Use `npm unlink -g` to make sure you're using the **published** version
     - Can always run `npm link` again to switch back to development
   ## Use `npm version patch | minor | major` to increment CLI version
-  
   ## Use `npm publish` after versioning
     - If you get an error saying you do not have permission to publish
       - This is likely because someone else has already published a package with the same name
