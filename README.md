@@ -140,6 +140,11 @@ lsCommand.stdout.on("data", (data) => {
     - Build styled CLI prompts for taking user input
   - [`prompts`](https://www.npmjs.com/package/prompts)
     - Similar to `enquirer`
+  - [`execa`](https://www.npmjs.com/package/execa)
+    - Improves `child_process` methods 
+    - Promise-based (can `await` execution)
+  - [`shelljs`](https://www.npmjs.com/package/shelljs)
+    - Portable (Windows/Linux/macOS) implementation of Unix shell commands
 </details>
 
 # Creating a module

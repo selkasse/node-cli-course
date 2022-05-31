@@ -4,5 +4,9 @@
   "type": "module",
   "bin": {
     "_dir": "index.js"
+  },
+  "dependencies": {
+    "execa": "^6.1.0",
+    "shelljs": "^0.8.5"
   }
 }

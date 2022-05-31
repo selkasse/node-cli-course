@@ -1,6 +1,10 @@
 #!/usr/bin/env node
 
-import { exec } from "child_process";
+import shell from "shelljs";
+const exec = shell.exec;
+const mkdir = shell.mkdir;
+
 const dirName = process.argv[2];
 
-exec(`mkdir ${dirName}`);
+// exec(`mkdir -p ${dirName}`);
+mkdir(`-p`, dirName);
