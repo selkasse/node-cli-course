@@ -40,6 +40,8 @@ rm -rf ~/.npm/_npx
   - To get around this issue, you can create a **scoped package**
   - A scoped package creates a package under a namespace, denoted with `@`
   - For example: `@myCompany/hello` will create a `hello` package that is scoped to `@myCompany`
+  - **NOTE: Scoped packages are a paid feature**
+    - However, if you publish with `npm publish --access public`, you can use a create a public scoped package for free
   
   ## Use `npx <your CLI name>` to run the published version
 
