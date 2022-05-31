@@ -29,14 +29,14 @@ rm -rf ~/.npm/_npx
   - Creates a symlink from the project directory to the glboal installation
   - Makes it so that you can work on your CLI without always having to rebuild
   ## Use `npm unlink -g` to make sure you're using the **published** version
-    - Can always run `npm link` again to switch back to development
+  - Can always run `npm link` again to switch back to development
   ## Use `npm version patch | minor | major` to increment CLI version
   ## Use `npm publish` after versioning
-    - If you get an error saying you do not have permission to publish
-      - This is likely because someone else has already published a package with the same name
-    - To get around this issue, you can create a **scoped package**
-    - A scoped package creates a package under a namespace, denoted with `@`
-    - For example: `@myCompany/hello` will create a `hello` package that is scoped to `@myCompany`
+  - If you get an error saying you do not have permission to publish
+    - This is likely because someone else has already published a package with the same name
+  - To get around this issue, you can create a **scoped package**
+  - A scoped package creates a package under a namespace, denoted with `@`
+  - For example: `@myCompany/hello` will create a `hello` package that is scoped to `@myCompany`
   
   ## Use `npx <your CLI name>` to run the published version
 
