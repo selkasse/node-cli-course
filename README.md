@@ -42,7 +42,6 @@ rm -rf ~/.npm/_npx
   - For example: `@myCompany/hello` will create a `hello` package that is scoped to `@myCompany`
   - **NOTE: Scoped packages are a paid feature**
     - However, if you publish with `npm publish --access public`, you can use a create a public scoped package for free
-  
   ## Use `npx <your CLI name>` to run the published version
 
 </details>
@@ -56,6 +55,23 @@ rm -rf ~/.npm/_npx
 - They can be spawned from within an exisiting node process
 - Multiple child processes can be spawned within a single node process
 - Each child process has its own input and output stream
+
+## Example
+
+- This child process runs the `ls` command from within the parent node process
+
+```js
+#!/usr/bin/env node
+
+import { spawn } from "child_process";
+
+const lsCommand = spawn("ls");
+
+lsCommand.stdout.on("data", (data) => {
+  console.log(`DATA FROM CHILD PROCESS: \n${data}`);
+});
+```
+
 </details>
 
 # Useful Packages
