@@ -1,0 +1,8 @@
+{
+  "name": "@selkasse/dir",
+  "version": "0.0.1",
+  "type": "module",
+  "bin": {
+    "_dir": "index.js"
+  }
+}
