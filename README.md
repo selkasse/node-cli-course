@@ -145,6 +145,8 @@ lsCommand.stdout.on("data", (data) => {
     - Promise-based (can `await` execution)
   - [`shelljs`](https://www.npmjs.com/package/shelljs)
     - Portable (Windows/Linux/macOS) implementation of Unix shell commands
+  - [`cli-meow-help`](https://www.npmjs.com/package/cli-meow-help)
+    - Generate and format help menus automatically
 </details>
 
 # Creating a module
