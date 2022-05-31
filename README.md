@@ -33,6 +33,11 @@ rm -rf ~/.npm/_npx
   ## Use `npm version patch | minor | major` to increment CLI version
   
   ## Use `npm publish` after versioning
+    - If you get an error saying you do not have permission to publish
+      - This is likely because someone else has already published a package with the same name
+    - To get around this issue, you can create a **scoped package**
+    - A scoped package creates a package under a namespace, denoted with `@`
+    - For example: `@myCompany/hello` will create a `hello` package that is scoped to `@myCompany`
   
   ## Use `npx <your CLI name>` to run the published version
 
