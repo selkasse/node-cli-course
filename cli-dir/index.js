@@ -1,9 +1,6 @@
 #!/usr/bin/env node
 
-import { spawn } from "child_process";
+import { exec } from "child_process";
+const dirName = process.argv[2];
 
-const lsCommand = spawn("ls");
-
-lsCommand.stdout.on("data", (data) => {
-  console.log(`DATA FROM CHILD PROCESS: \n${data}`);
-});
+exec(`mkdir ${dirName}`);

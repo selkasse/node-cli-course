@@ -72,6 +72,21 @@ lsCommand.stdout.on("data", (data) => {
 });
 ```
 
+## [`child_process.exec(command[,options][,callback])`](https://nodejs.org/api/child_process.html#child_processexeccommand-options-callback)
+
+- Runs commands that have the ability to modify your system
+  - For example `mkdir`
+  - Different from `ls`, since `ls` only prints data, whereas `mkdir` actually makes a folder
+- Example: Creates a `utils` folder in the current directory, when the file is run
+
+  ```js
+  #!/usr/bin/env node
+
+  import { exec } from "child_process";
+
+  exec("mkdir utils");
+  ```
+
 </details>
 
 # Useful Packages
