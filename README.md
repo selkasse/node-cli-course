@@ -51,10 +51,11 @@ rm -rf ~/.npm/_npx
 
 <details>
   <summary>Click to expand</summary>
-  - [Child processes](https://nodejs.org/api/child_process.html) are subprocesses
-  - They can be spawned from within an exisiting node process
-  - Multiple child processes can be spawned within a single node process
-  - Each child process has its own input and output stream
+
+- [Child processes](https://nodejs.org/api/child_process.html) are subprocesses
+- They can be spawned from within an exisiting node process
+- Multiple child processes can be spawned within a single node process
+- Each child process has its own input and output stream
 </details>
 
 # Useful Packages
