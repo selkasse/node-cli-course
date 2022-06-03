@@ -1,0 +1,14 @@
+{
+  "name": "fixed-output",
+  "description": "yep",
+  "version": "0.0.1",
+  "license": "UNLICENSED",
+  "bin": {
+    "fixed-output": "index.js"
+  },
+  "author": {
+    "name": "",
+    "email": "",
+    "url": ""
+  }
+}

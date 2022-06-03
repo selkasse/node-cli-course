@@ -1,0 +1,14 @@
+{
+  "name": "without-directory",
+  "description": "yep",
+  "version": "0.0.1",
+  "license": "UNLICENSED",
+  "bin": {
+    "without-directory": "index.js"
+  },
+  "author": {
+    "name": "",
+    "email": "",
+    "url": ""
+  }
+}

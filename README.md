@@ -6,6 +6,13 @@
 rm -rf ~/.npm/_npx
 ```
 
+## Disable Warning when using ESM
+
+- Edit the shebang like so:
+  `// #!/usr/bin/env -S node --no-warnings`
+
+## [Using `__dirname` with ESM](https://blog.logrocket.com/alternatives-dirname-node-js-es-modules/)
+
 # Creating a CLI
 
 <details>
@@ -147,6 +154,13 @@ lsCommand.stdout.on("data", (data) => {
     - Portable (Windows/Linux/macOS) implementation of Unix shell commands
   - [`cli-meow-help`](https://www.npmjs.com/package/cli-meow-help)
     - Generate and format help menus automatically
+  - [`copy-template-dir`](https://www.npmjs.com/package/copy-template-dir)
+    - Copy a directory of files over to the target directory, and inject the files with variables
+    - Inject variables using mustache `{{ }}` syntax
+  - [`consolidate`](https://www.npmjs.com/package/consolidate)
+    - Template engine consolidation
+    - Supports many template engines
+    
 </details>
 
 # Creating a module
