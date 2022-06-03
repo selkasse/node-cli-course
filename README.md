@@ -1,6 +1,6 @@
 # NodeCLI Course Notes
 
-## If `npx` is not executing the latest version of your package
+- If `npx` is not executing the latest version of your package, run this command:
 
 ```bash
 rm -rf ~/.npm/_npx
@@ -9,6 +9,7 @@ rm -rf ~/.npm/_npx
 ## Disable Warning when using ESM
 
 - Edit the shebang like so:
+
   `// #!/usr/bin/env -S node --no-warnings`
 
 ## [Using `__dirname` with ESM](https://blog.logrocket.com/alternatives-dirname-node-js-es-modules/)
