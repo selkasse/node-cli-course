@@ -2,9 +2,9 @@
 
 - If `npx` is not executing the latest version of your package, run this command:
 
-```bash
-rm -rf ~/.npm/_npx
-```
+  ```bash
+  rm -rf ~/.npm/_npx
+  ```
 
 ## Disable Warning when using ESM
 
