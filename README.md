@@ -10,7 +10,15 @@
 
   `// #!/usr/bin/env -S node --no-warnings`
 
-## [Using `__dirname` with ESM](https://blog.logrocket.com/alternatives-dirname-node-js-es-modules/)
+- To use `__dirname` and `__filename` with ESM:
+
+  ```js
+  import * as url from "url";
+  const __filename = url.fileURLToPath(import.meta.url);
+  const __dirname = url.fileURLToPath(new URL(".", import.meta.url));
+  ```
+
+  - [See here for more info](https://blog.logrocket.com/alternatives-dirname-node-js-es-modules/)
 
 # Creating a CLI
 
