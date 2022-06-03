@@ -6,7 +6,7 @@
   rm -rf ~/.npm/_npx
   ```
 
-- To disable warning when using ESM, edit your shebang like so:
+- To disable warnings when using ESM, edit your shebang like so:
 
   `// #!/usr/bin/env -S node --no-warnings`
 
