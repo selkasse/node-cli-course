@@ -1,5 +1,0 @@
-# In the template folder, this file is preprended with a _
-# All dotfiles in the template folder must follow this convention
-# When they are generated in the output folder, the _ will be removed
-
-node_modules

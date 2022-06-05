@@ -10,8 +10,8 @@ export default ({ clear = true }) => {
   unhandled();
 
   welcome({
-    title: `{{name}}`,
-    tagLine: `by {{authorName}}`,
+    title: `pewp`,
+    tagLine: `by shit`,
     description: pkg.description,
     version: pkg.version,
     bgColor: `#6cc24a`,

@@ -1,18 +1,10 @@
 #!/usr/bin/env -S node --no-warnings
 
-//***********************************************
-//*
-//? {{name}}
-//? {{description}}
-//? @author {{description}}
-//*
-//***********************************************/
-
 /**
  *
  * {{name}}
  * {{description}}
- * @author {{authorName}} <{{authorUrl}}>
+ * @author {{authorName}} <{{authorURL}}>
  *
  */
 
@@ -22,7 +14,12 @@ import log from "./utils/log.js";
 
 const input = cli.input;
 const flags = cli.flags;
+const { clear, debug } = flags;
 
-const { clear, debug } = flags(async () => {
+(async () => {
   init({ clear });
+
+  input.includes(`help`) && cli.showHelp(0);
+
+  debug && log(flags);
 })();

@@ -1,14 +1,17 @@
-{
-  "name": "{{name}}",
-  "description": "{{description}}",
-  "version": "{{version}}",
-  "license": "{{license}}",
-  "bin": {
-    "{{name}}": "index.js"
-  },
-  "author": {
-    "name": "{{authorName}}",
-    "email": "{{authorEmail}}",
-    "url": "{{authorURL}}"
+
+  {
+    "name": "{{name}}",
+    "description": "{{description}}",
+    "version": "{{version}}",
+    "license": "{{license}}",
+    "type": "module",
+    "bin": {
+      "{{name}}": "index.js",
+      "{{command}}": "index.js"
+    },
+    "author": {
+      "name": "{{authorName}}",
+      "email": "{{authorEmail}}",
+      "url": "{{authorURL}}"
+    }
   }
-}

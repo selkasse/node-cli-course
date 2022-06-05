@@ -1,0 +1,17 @@
+
+  {
+    "name": "pewp",
+    "description": "lol it's shit",
+    "version": "0.0.1",
+    "license": "UNLICENSED",
+    "type": "module",
+    "bin": {
+      "pewp": "index.js",
+      "poop": "index.js"
+    },
+    "author": {
+      "name": "shit",
+      "email": "shit",
+      "url": "shit"
+    }
+  }

@@ -6,7 +6,7 @@ import unhandled from "cli-handle-unhandled";
 const fileURL = new URL("../package.json", import.meta.url);
 const pkg = JSON.parse(readFileSync(fileURL));
 
-export default () => {
+export default ({ clear = true }) => {
   unhandled();
 
   welcome({
@@ -16,7 +16,7 @@ export default () => {
     version: pkg.version,
     bgColor: `#6cc24a`,
     color: `#000000`,
-    clear: true,
+    clear,
     bold: true,
   });
 };

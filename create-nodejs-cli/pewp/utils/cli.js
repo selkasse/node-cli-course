@@ -28,7 +28,7 @@ const commands = {
 };
 
 const helpText = meowHelp({
-  name: `{{command}}`,
+  name: `poop`,
   flags,
   commands,
 });
