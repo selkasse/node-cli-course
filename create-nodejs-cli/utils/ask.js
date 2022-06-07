@@ -1,9 +1,10 @@
-import enquirer from "enquirer";
-import { to } from "await-to-js";
-import handleError from "cli-handle-error";
-import shouldCancel from "cli-should-cancel";
+import * as fs from 'fs'
+import enquirer from 'enquirer'
+import { to } from 'await-to-js'
+import handleError from 'cli-handle-error'
+import shouldCancel from 'cli-should-cancel'
 
-const { Input } = enquirer;
+const { Input } = enquirer
 
 export default async ({ name, message, hint, initial }) => {
   const [err, response] = await to(
@@ -13,20 +14,27 @@ export default async ({ name, message, hint, initial }) => {
       hint,
       initial,
       validate(value, state) {
-        //* Since the 'command' field is optional, do not require a value
-        //* Note that at the time of this writing (06-04-2022),
-        //? A duplicate entry will be created in the output package.json
-        //? This is because `npm dedupe`
-        if (state && state.name === `command`) return true;
+        //* Since the 'command' is optional,
+        //?   do not require the user to enter a value
+        if (state && state.name === `command`) return true
 
-        return !value ? `Please add a value` : true;
+        //* Prevent execution if the folder already exists
+        if (state && state.name === `name`) {
+          if (fs.existsSync(value)) {
+            return `Directory already exists: ./${value}`
+          } else {
+            return true
+          }
+        }
+
+        return !value ? `Please add a value` : true
       },
     })
       .on(`cancel`, () => shouldCancel())
       .run()
-  );
+  )
 
-  handleError(`INPUT`, err);
+  handleError(`INPUT`, err)
 
-  return response;
-};
+  return response
+}

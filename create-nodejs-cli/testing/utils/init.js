@@ -10,13 +10,13 @@ export default ({ clear = true }) => {
   unhandled()
 
   welcome({
-    title: `create-node-cli`,
-    tagLine: `Node CLI tutorial`,
+    title: `testing`,
+    tagLine: `by l`,
     description: pkg.description,
     version: pkg.version,
     bgColor: `#6cc24a`,
     color: `#000000`,
-    clear,
     bold: true,
+    clear,
   })
 }

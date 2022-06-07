@@ -1,13 +1,13 @@
-import { readFileSync } from "fs";
+import { readFileSync } from 'fs'
 
-import welcome from "cli-welcome";
-import unhandled from "cli-handle-unhandled";
+import welcome from 'cli-welcome'
+import unhandled from 'cli-handle-unhandled'
 
-const fileURL = new URL("../package.json", import.meta.url);
-const pkg = JSON.parse(readFileSync(fileURL));
+const fileURL = new URL('../package.json', import.meta.url)
+const pkg = JSON.parse(readFileSync(fileURL))
 
 export default ({ clear = true }) => {
-  unhandled();
+  unhandled()
 
   welcome({
     title: `{{name}}`,
@@ -18,5 +18,5 @@ export default ({ clear = true }) => {
     color: `#000000`,
     bold: true,
     clear,
-  });
-};
+  })
+}

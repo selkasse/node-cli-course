@@ -1,8 +1,8 @@
-import * as fs from "fs";
+import * as fs from 'fs'
 
 //* __dirname workaround for ESM ----------------------------------
-import * as url from "url";
-const __dirname = url.fileURLToPath(new URL(".", import.meta.url));
+import * as url from 'url'
+const __dirname = url.fileURLToPath(new URL('.', import.meta.url))
 //* ---------------------------------------------------------------
 
 export default (vars) => {
@@ -45,13 +45,13 @@ export default (vars) => {
       "email": "{{authorEmail}}",
       "url": "{{authorURL}}"
     }
-  }`;
+  }`
 
   fs.writeFile(
-    __dirname + "/../template/package.json",
+    __dirname + '/../template/package.json',
     templatePackageJSON,
     (err) => {
-      if (err) console.log(error);
+      if (err) console.log(error)
     }
-  );
-};
+  )
+}

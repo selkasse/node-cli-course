@@ -1,8 +1,15 @@
 #!/usr/bin/env -S node --no-warnings
 
+/**
+ *
+ * test
+ * test
+ * @author test <test>
+ *
+ */
+
 import init from './utils/init.js'
 import cli from './utils/cli.js'
-import generate from './utils/generate.js'
 import log from './utils/log.js'
 
 const input = cli.input
@@ -15,6 +22,4 @@ const { clear, debug } = flags
   input.includes(`help`) && cli.showHelp(0)
 
   debug && log(flags)
-
-  await generate()
 })()

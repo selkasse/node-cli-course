@@ -1,5 +1,5 @@
-import meow from "meow";
-import meowHelp from "cli-meow-help";
+import meow from 'meow'
+import meowHelp from 'cli-meow-help'
 
 const flags = {
   clear: {
@@ -19,19 +19,19 @@ const flags = {
     alias: `v`,
     desc: `Print CLI version`,
   },
-};
+}
 
 const commands = {
   help: {
     desccription: `Print help info`,
   },
-};
+}
 
 const helpText = meowHelp({
   name: `{{command}}`,
   flags,
   commands,
-});
+})
 
 const options = {
   importMeta: import.meta,
@@ -39,6 +39,6 @@ const options = {
   desccription: false,
   hardRejection: false,
   flags,
-};
+}
 
-export default meow(helpText, options);
+export default meow(helpText, options)
