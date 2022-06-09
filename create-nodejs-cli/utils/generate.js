@@ -51,7 +51,6 @@ export default async () => {
     const packages = [
       `meow`,
       `chalk`,
-      `chalk`,
       `cli-alerts`,
       `cli-welcome`,
       `cli-meow-help`,

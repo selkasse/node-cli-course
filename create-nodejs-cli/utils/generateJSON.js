@@ -27,6 +27,9 @@ export default (vars) => {
       "name": "{{authorName}}",
       "email": "{{authorEmail}}",
       "url": "{{authorURL}}"
+    },
+    "scripts":{
+      "format": "prettier --write ./**/*.{js,json}"
     }
   }`
       : `
@@ -44,6 +47,9 @@ export default (vars) => {
       "name": "{{authorName}}",
       "email": "{{authorEmail}}",
       "url": "{{authorURL}}"
+    },
+    "scripts":{
+      "format": "prettier --write ./**/*.{js,json}"
     }
   }`
 
