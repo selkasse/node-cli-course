@@ -41,11 +41,13 @@ Object.keys(flags).forEach((option) => {
   }
 })
 
-let exampleString = `${chalk.green(`${CLI_COMMAND}`)} `
+//* Dim everything except for the '--no'
+let exampleString = `${chalk.green.dim(`${CLI_COMMAND}`)} `
 for (let i = 0; i < NUM_EXAMPLES; i++) {
   //* Do not add if booleanExamples.length is less than NUM_EXAMPLES
   if (booleanExamples[i]) {
-    exampleString += `${chalk.yellow(`--no-${booleanExamples[i]}`)} `
+    exampleString += `${chalk.yellow(`--no${chalk.dim(`-`)}`)}`
+    exampleString += `${chalk.yellow.dim(booleanExamples[i])} `
   }
 }
 
