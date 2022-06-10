@@ -39,6 +39,8 @@ export default async ({ name, message, hint, initial }) => {
       initial,
       history,
       validate(value, state) {
+        // console.log(value)
+        // console.log(state)
         //* Since the 'command' is optional,
         //?   do not require the user to enter a value
         if (state && state.name === `command`) return true
@@ -48,7 +50,8 @@ export default async ({ name, message, hint, initial }) => {
           if (fs.existsSync(value)) {
             return `Directory already exists: ./${value}`
           } else {
-            return true
+            return !value ? `Please add a value` : true
+            // return true
           }
         }
 
