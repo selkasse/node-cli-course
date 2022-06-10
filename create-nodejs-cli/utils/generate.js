@@ -3,7 +3,6 @@ import copy from 'copy-template-dir'
 import alert from 'cli-alerts'
 import ask from './questions.js'
 import chalk from 'chalk'
-import generateJSON from './generateJSON.js'
 import ora from 'ora'
 import { execa } from 'execa'
 
@@ -20,8 +19,6 @@ const __dirname = url.fileURLToPath(new URL('.', import.meta.url))
 
 export default async () => {
   const vars = await ask()
-
-  await generateJSON(vars)
 
   const outputDir = vars.name
 
@@ -60,6 +57,7 @@ export default async () => {
 
     await execa(`npm`, [`install`, ...packages])
     await execa(`npm`, [`install`, `prettier`, `-D`])
+    await execa(`npm`, [`dedupe`])
     spinner.succeed(`${g(`DEPENDENCIES`)} installed!`)
 
     alert({

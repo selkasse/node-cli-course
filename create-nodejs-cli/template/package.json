@@ -6,7 +6,8 @@
     "license": "{{license}}",
     "type": "module",
     "bin": {
-      "{{name}}": "index.js"
+      "{{name}}": "index.js",
+      "{{command}}": "index.js"
     },
     "author": {
       "name": "{{authorName}}",
