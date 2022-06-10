@@ -1,5 +1,6 @@
 import meow from 'meow'
 import meowHelp from 'cli-meow-help'
+import chalk from 'chalk'
 
 const flags = {
   clear: {
