@@ -1,0 +1,35 @@
+{
+  "todos": [
+    {
+      "title": "get breakfast",
+      "normalized": true,
+      "name": "get breakfast",
+      "message": "get breakfast",
+      "value": "get breakfast",
+      "input": "",
+      "index": 1,
+      "cursor": 0,
+      "level": 1,
+      "indent": "",
+      "path": "get breakfast",
+      "enabled": false
+    },
+    {
+      "title": "get coffee",
+      "normalized": true,
+      "name": "get coffee",
+      "message": "get coffee",
+      "value": "get coffee",
+      "input": "",
+      "index": 2,
+      "cursor": 0,
+      "level": 1,
+      "indent": "",
+      "path": "get coffee",
+      "enabled": false
+    },
+    {
+      "title": "feed lucy"
+    }
+  ]
+}
