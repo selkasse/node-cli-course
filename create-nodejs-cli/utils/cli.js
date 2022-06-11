@@ -1,9 +1,8 @@
 import meow from 'meow'
 import meowHelp from 'cli-meow-help'
-import chalk from 'chalk'
+import makeFooter from 'cli-footer'
 
 const CLI_COMMAND = `ncli`
-const NUM_EXAMPLES = 3
 
 const flags = {
   clear: {
@@ -31,33 +30,7 @@ const commands = {
   },
 }
 
-let booleanExamples = []
-//* Only add the flags that:
-//? 1. Have a default
-//? 2. The default is TRUE
-Object.keys(flags).forEach((option) => {
-  if (flags[option].type === 'boolean' && flags[option].default === true) {
-    booleanExamples.push(option)
-  }
-})
-
-//* Dim everything except for the '--no'
-let exampleString = `${chalk.green.dim(`${CLI_COMMAND}`)} `
-for (let i = 0; i < NUM_EXAMPLES; i++) {
-  //* Do not add if booleanExamples.length is less than NUM_EXAMPLES
-  if (booleanExamples[i]) {
-    exampleString += `${chalk.yellow(`--no${chalk.dim(`-`)}`)}`
-    exampleString += `${chalk.yellow.dim(booleanExamples[i])} `
-  }
-}
-
-let footer = `${chalk.yellowBright.dim.inverse(` NOTE `)}`
-
-footer += `\n\n${chalk.yellow(`--no`)} can be prepended to any boolean option`
-footer += `\n(if the default value is ${chalk.dim.yellow(`true`)})`
-footer += `\n\nThis will toggle the value to ${chalk.dim.yellow(`false`)}`
-footer += `\n\n${chalk.yellowBright.dim.inverse(` EXAMPLE `)}\n\n`
-footer += exampleString
+const footer = makeFooter(CLI_COMMAND, flags)
 
 const helpText = meowHelp({
   name: CLI_COMMAND,

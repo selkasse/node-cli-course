@@ -1,6 +1,6 @@
 import meow from 'meow'
 import meowHelp from 'cli-meow-help'
-import chalk from 'chalk'
+import makeFooter from 'cli-footer'
 
 const flags = {
   clear: {
@@ -28,10 +28,13 @@ const commands = {
   },
 }
 
+const footer = makeFooter(`{{command}}`, flags)
+
 const helpText = meowHelp({
   name: `{{command}}`,
   flags,
   commands,
+  footer,
 })
 
 const options = {

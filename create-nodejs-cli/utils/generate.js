@@ -49,6 +49,7 @@ export default async () => {
       `meow`,
       `chalk`,
       `cli-alerts`,
+      `cli-footer`,
       `cli-welcome`,
       `cli-meow-help`,
       `cli-handle-error`,
