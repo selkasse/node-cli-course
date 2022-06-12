@@ -1,0 +1,33 @@
+{
+    "name": "cli-progress",
+    "description": "CLI with progress bars",
+    "version": "0.0.1",
+    "license": "MIT",
+    "type": "module",
+    "bin": {
+        "cli-progress": "index.js",
+        "progress": "index.js"
+    },
+    "author": {
+        "name": "Sharif Elkassed",
+        "email": "selkasse@gmu.edu",
+        "url": "https://saleshorse.org"
+    },
+    "scripts": {
+        "format": "prettier --write ./**/*.{js,json}"
+    },
+    "dependencies": {
+        "chalk": "^5.0.1",
+        "cli-alerts": "^1.2.2",
+        "cli-footer": "^0.0.6",
+        "cli-handle-error": "^4.4.0",
+        "cli-handle-unhandled": "^1.1.1",
+        "cli-meow-help": "^3.1.0",
+        "cli-welcome": "^2.2.2",
+        "meow": "^10.1.2",
+        "progress-estimator": "^0.3.0"
+    },
+    "devDependencies": {
+        "prettier": "^2.6.2"
+    }
+}
